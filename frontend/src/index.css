@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #EDE7DC; /* Modernist Warm Beige Foundation */
+    color: #0A1326; /* Deep Dark Blue Secondary Typography */
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Modern Neumorphic Classes - Primary Beige with Soft Dual Shadows */
+.neu-flat {
+  background: #EDE7DC;
+  box-shadow: 7px 7px 18px #d4cbbe, -7px -7px 18px #ffffff;
+}
+
+.neu-flat-sm {
+  background: #EDE7DC;
+  box-shadow: 4px 4px 10px #d8cfc2, -4px -4px 10px #ffffff;
+}
+
+.neu-flat-lg {
+  background: #EDE7DC;
+  box-shadow: 12px 12px 28px #cfc5b6, -12px -12px 28px #ffffff;
+}
+
+.neu-inset {
+  background: #E8E1D5;
+  box-shadow: inset 4px 4px 8px #d2c8b9, inset -4px -4px 8px #ffffff;
+}
+
+.neu-inset-sm {
+  background: #E8E1D5;
+  box-shadow: inset 2px 2px 5px #d4cbbe, inset -2px -2px 5px #ffffff;
+}
+
+.neu-btn {
+  background: #EDE7DC;
+  color: #0A1326;
+  box-shadow: 5px 5px 12px #d4cbbe, -5px -5px 12px #ffffff;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neu-btn:hover {
+  box-shadow: 3px 3px 8px #d4cbbe, -3px -3px 8px #ffffff;
+  transform: translateY(1px);
+}
+
+.neu-btn:active, .neu-btn-pressed {
+  background: #E5DEC0;
+  box-shadow: inset 3px 3px 6px #cfc6b8, inset -3px -3px 6px #ffffff;
+  transform: translateY(2px);
+}
+
+/* Dark Blue High-Impact Button with Neumorphic Depth */
+.neu-btn-navy {
+  background: #0A1326;
+  color: #F7F3EC;
+  box-shadow: 5px 5px 14px #cfc5b6, -4px -4px 12px #ffffff;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neu-btn-navy:hover {
+  background: #112040;
+  box-shadow: 3px 3px 8px #cfc5b6, -2px -2px 8px #ffffff;
+  transform: translateY(1px);
+}
+
+.neu-btn-navy:active {
+  box-shadow: inset 3px 3px 6px #040914, inset -2px -2px 6px #1b2f59;
+  transform: translateY(2px);
+}
+
+/* Red / Danger Action Button */
+.neu-btn-danger {
+  background: #B91C1C;
+  color: #FFFFFF;
+  box-shadow: 5px 5px 14px #cfc5b6, -4px -4px 12px #ffffff;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neu-btn-danger:hover {
+  background: #991B1B;
+  box-shadow: 3px 3px 8px #cfc5b6, -2px -2px 8px #ffffff;
+}
+
+/* Emerald Success Pill */
+.neu-btn-success {
+  background: #047857;
+  color: #FFFFFF;
+  box-shadow: 5px 5px 14px #cfc5b6, -4px -4px 12px #ffffff;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neu-btn-success:hover {
+  background: #065F46;
+}
+
+/* Clean Neumorphic Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #E8E1D5;
+}
+::-webkit-scrollbar-thumb {
+  background: #CFC5B6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0A1326;
+}
+
+/* Modernist Text Selection */
+::selection {
+  background-color: #0A1326;
+  color: #EDE7DC;
+}
